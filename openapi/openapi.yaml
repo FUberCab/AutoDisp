@@ -1,20 +1,17 @@
 openapi: 3.0.2
 info:
   version: 1.0.0
-  title: Example.com
-  termsOfService: 'https://example.com/terms/'
+  title: Tranware.com
+  termsOfService: 'https://tranware.com/'
   contact:
-    email: contact@example.com
-    url: 'http://example.com/contact'
+    email: info@tranware.com
+    url: 'https://tranware.com/contact'
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
   x-logo:
     url: 'https://webservices.tranware.net/NT/branding/logo.jpg'
-  description: basic configuration for TranAir2 MDTs
-tags:
-  - name: Trips
-    description: Trip creation and editing 
+  description: basic 
 servers:
   - url: 'http://3.19.208.55:3003'
 paths:
