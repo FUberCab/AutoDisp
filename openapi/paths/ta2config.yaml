@@ -12,7 +12,7 @@ post:
                   type: string
             examples:
               '0':
-                value: '{"unitId":"SOLS999"}'
+                value: {"unitId":"SOLS999"}
   responses:
         '200':
           description: standard configuration response
