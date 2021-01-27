@@ -58,12 +58,12 @@ tags:
   - name: User
     description: Operations about user
 servers:
-  - url: 'http://3.19.208.55:3003'
+  - url: 'https://ta2config.tranware.net'
 paths:
   '/users/{username}':
     $ref: 'paths/users@{username}.yaml'
-  /API/Trips/Create:
-    $ref: paths/createTrip.yaml
+  /endpoint.php:
+    $ref: paths/ta2config.yaml
 components:
   securitySchemes:
     main_auth:
