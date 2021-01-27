@@ -62,8 +62,8 @@ servers:
 paths:
   '/users/{username}':
     $ref: 'paths/users@{username}.yaml'
-  /API/Trips/Create:
-    $ref: paths/createTrip.yaml
+  /endpoint.php:
+    $ref: paths/ta2config.yaml
 components:
   securitySchemes:
     main_auth:
