@@ -15,7 +15,7 @@ post:
                 value: '{"unitId":"SOLS999"}'
   responses:
         '200':
-          description: Auto generated using Swagger Inspector
+          description: standard configuration response
           content:
             application/json:
               schema:
