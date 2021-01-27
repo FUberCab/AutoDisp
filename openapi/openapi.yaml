@@ -12,17 +12,14 @@ info:
   x-logo:
     url: 'https://webservices.tranware.net/NT/branding/logo.jpg'
   description: basic configuration for TranAir2 MDTs
-externalDocs:
-  description: Find out how to create a GitHub repo for your OpenAPI definition.
-  url: 'https://github.com/Rebilly/generator-openapi-repo'
 tags:
-  - name: Config
-    description: configuration server
+  - name: Trips
+    description: Trip creation and editing 
 servers:
-  - url: 'https://ta2config.tranware.net'
+  - url: 'http://3.19.208.55:3003'
 paths:
-  /endpoint.php:
-    $ref: paths/ta2config.yaml
+  /API/Trips/Create:
+    $ref: paths/createTrip.yaml
 components:
   securitySchemes:
     api_key:

@@ -1,0 +1,92 @@
+post:
+  tags:
+    - Trip
+  summary: Create Trip
+  description: Create Trip
+  operationId: Trip
+  responses:
+    '200':
+      description: OK
+      headers:
+        X-Rate-Limit:
+          description: calls per hour allowed by the user
+          schema:
+            type: integer
+            format: int32
+        X-Expires-After:
+          $ref: ../components/headers/ExpiresAfter.yaml
+      content:
+        application/json:
+          schema:
+            type: string
+          examples:
+            response:
+              value: Hello world!
+        application/xml:
+          schema:
+            type: string
+        text/csv:
+          schema:
+            type: string
+  requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                passengerName:
+                  type: string
+                apiKey:
+                  type: string
+                originRegion: {}
+                originLat:
+                  type: number
+                destinationRegionCode:
+                  type: string
+                aarId:
+                  type: string
+                source:
+                  type: string
+                destinationStreetName:
+                  type: string
+                importID:
+                  type: string
+                passengerPhone:
+                  type: string
+                originCityName:
+                  type: string
+                originNote:
+                  type: string
+                destinationCityName:
+                  type: string
+                pickupTimeStamp:
+                  type: number
+                originLon:
+                  type: number
+                destinationLat:
+                  type: number
+                vehicleType: {}
+                passengerCell:
+                  type: string
+                destinationStreetNumber:
+                  type: string
+                destinationRegion: {}
+                passengerCount:
+                  type: integer
+                originStreetName:
+                  type: string
+                originStreetNumber:
+                  type: string
+                originPostalCode:
+                  type: string
+                passengerEmail: {}
+                originRegionCode:
+                  type: string
+                destinationPostalCode:
+                  type: string
+                destinationLon:
+                  type: number
+                dropoffTimeStamp: {}
+            examples:
+              '0':
+                value: "{ \"source\": \"MTA Access\",\r\n  \"importID\": \"0193740241\",\r\n  \"aarId\": \"928656\",\r\n  \"passengerName\": \"PREVITI, DANIEL\",\r\n  \"passengerEmail\": null,\r\n  \"passengerPhone\": \"3477373429\",\r\n  \"passengerCell\": \"\",\r\n  \"passengerCount\": 2,\r\n  \"vehicleType\": null,\r\n  \"pickupTimeStamp\": 1609372800000,\r\n  \"dropoffTimeStamp\": null,\r\n  \"originLat\": 40.58797,\r\n  \"originLon\": -74.19049,\r\n  \"originStreetNumber\": \"290\",\r\n  \"originStreetName\": \"Wild Ave\",\r\n  \"originCityName\": \"Staten Island\",\r\n  \"originRegion\": null,\r\n  \"originRegionCode\": \"NY\",\r\n  \"originPostalCode\": \"10314\",\r\n  \"originNote\": \"pickup notes:  dropoff notes  driver notes: Collect $2.75 cell: 3477373429 service needs: DD\",\r\n  \"destinationLat\": 40.63197,\r\n  \"destinationLon\": -74.1638,\r\n  \"destinationStreetNumber\": \"150\",\r\n  \"destinationStreetName\": \"Brabant St\",\r\n  \"destinationCityName\": \"Staten Island\",\r\n  \"destinationRegion\": null,\r\n  \"destinationRegionCode\": \"NY\",\r\n  \"destinationPostalCode\": \"10303\",\r\n  \"apiKey\": \"goin_test123\" }"
