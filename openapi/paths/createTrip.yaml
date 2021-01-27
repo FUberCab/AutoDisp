@@ -2,7 +2,7 @@ post:
   summary: TranAir2 Config
   description: get settings for Vehicle MDT software
   operationId: config
-      requestBody:
+  requestBody:
         content:
           application/json:
             schema:
@@ -13,7 +13,7 @@ post:
             examples:
               '0':
                 value: '{"unitId":"SOLS999"}'
-      responses:
+  responses:
         '200':
           description: Auto generated using Swagger Inspector
           content:
