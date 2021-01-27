@@ -1,5 +1,7 @@
+
 post:
       description: Auto generated using Swagger Inspector
+      operationId: config
       requestBody:
         content:
           application/json:
@@ -15,9 +17,86 @@ post:
         '200':
           description: Auto generated using Swagger Inspector
           content:
-            text/html; charset=UTF-8:
+            application/json:
               schema:
-                type: string
-              examples: {}
-      servers:
-        - url: 'https://ta2config.tranware.net'
+                type: object
+                properties:
+                  fleetName:
+                    type: string
+                  updateVersion:
+                    type: string
+                  paymentProcessor:
+                    type: string
+                  passengerRating:
+                    type: boolean
+                  useArriveDestination:
+                    type: boolean
+                  taskProtection:
+                    type: boolean
+                  unitId:
+                    type: string
+                  dispatchUri:
+                    type: string
+                  credit_card_surcharge:
+                    type: string
+                  flag-destination:
+                    type: boolean
+                  promptMileage:
+                    type: boolean
+                  odometer:
+                    type: boolean
+                  predefinedMessages:
+                    type: array
+                    items:
+                      type: string
+                  gpsTime:
+                    type: integer
+                  forceUpdate:
+                    type: boolean
+                  ping-on-hired:
+                    type: boolean
+                  tablet-only-trips:
+                    type: boolean
+                  split-payment:
+                    type: boolean
+                  driverAppConfig:
+                    type: string
+                  updateUri:
+                    type: string
+                  proximity:
+                    type: integer
+                  useBook:
+                    type: boolean
+                  gpsMeters:
+                    type: integer
+                  signatureRequired:
+                    type: integer
+                  destProximity:
+                    type: integer
+                  softMeterDisplay:
+                    type: string
+                  DistanceUnits:
+                    type: string
+                  meter_disable_feature:
+                    type: boolean
+                  useArriveOrigin:
+                    type: boolean
+              examples:
+                '0':
+                  value: >-
+                    {"unitId":"SOLS999","updateUri":"https://ta2config.tranware.net/upload/TranAir-2.83.00-TaxiCommander-release.apk","dispatchUri":"https://comm-usa1.taxicommander.com:3010","fleetName":"SOL
+                    Transportation","predefinedMessages":["Yes /
+                    Confirmed","No","Waiting for Customer","Request Additional
+                    Taxi","Picked up Xtra Fare - Double Up","Customer Requested
+                    Round Trip","Cancel Trip Req. By Customer","ETA - 10
+                    Minutes","ETA - 20 Minutes","ETA - 30 Minutes","ETA - 60
+                    Minutes","Returning to Pickup","Request Call to
+                    Dispatch","Picked Up Personal","Coming to Office","Request
+                    Off Duty","Break - 15 Minutes","Break - 30 Minutes","Break -
+                    60 Minutes","Accident - Not Urgent","Accident - Out of
+                    Svc","Accident - Need Tow","Accident - Need
+                    Ambulance","Locked Out of Vehicle","Stopped by
+                    Police","Vehicle Broken Down","Destination
+                    Change","Emergency - Need
+                    Police"],"odometer":true,"taskProtection":false,"gpsMeters":500,"gpsTime":240,"proximity":0,"destProximity":0,"DistanceUnits":"miles","promptMileage":false,"credit_card_surcharge":"0.00","ping-on-hired":false,"flag-destination":false,"meter_disable_feature":false,"tablet-only-trips":false,"split-payment":false,"passengerRating":false,"updateVersion":"2.83.00","forceUpdate":true,"useBook":true,"useArriveOrigin":true,"useArriveDestination":true,"softMeterDisplay":"hidden","paymentProcessor":"0","signatureRequired":0,"driverAppConfig":"{\"displayZones\":true,
+                    \"cashiering\":true}"}
