@@ -1,7 +1,7 @@
-
 post:
-      description: Auto generated using Swagger Inspector
-      operationId: config
+  summary: TranAir2 Config
+  description: get settings for Vehicle MDT software
+  operationId: config
       requestBody:
         content:
           application/json:
