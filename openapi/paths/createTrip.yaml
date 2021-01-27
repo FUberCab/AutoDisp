@@ -20,7 +20,8 @@ post:
                   type: string
                 message:
                   type: string
-                result: {}
+                result: 
+                  type: object
             examples:
               '0':
                 value: { "status": "true",  "message": "Success","result":{"tripId": "76e1a1a3-94e8-f0f9-86dd-a7ed8167c7d9", "reservation":"14573","trip":"15322"}}
